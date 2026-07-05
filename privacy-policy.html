@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OmniChef — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F7F8; --paper-card:#FFFFFF; --ink:#14151A; --ink-soft:#6C7078; --line:#E4E6E9;
+  }
+  body{
+    margin:0; background:var(--paper); color:var(--ink); font-family:'Inter', sans-serif;
+    line-height:1.65;
+  }
+  .wrap{ max-width:760px; margin:0 auto; padding:48px 24px 96px; }
+  h1{ font-size:28px; font-weight:700; margin-bottom:4px; }
+  .updated{ color:var(--ink-soft); font-size:13px; margin-bottom:36px; }
+  h2{ font-size:18px; font-weight:600; margin-top:36px; margin-bottom:10px; }
+  p, li{ font-size:15px; color:var(--ink); }
+  ul{ padding-left:20px; }
+  li{ margin-bottom:6px; }
+  a{ color:var(--ink); }
+  .notice{
+    background:var(--paper-card); border:1px solid var(--line); border-radius:10px;
+    padding:14px 16px; font-size:13px; color:var(--ink-soft); margin-bottom:32px;
+  }
+  table{ width:100%; border-collapse:collapse; margin:12px 0; font-size:14px; }
+  th, td{ text-align:left; padding:8px 10px; border:1px solid var(--line); vertical-align:top; }
+  th{ background:var(--paper-card); font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: 6 July 2026</div>
+
+  <div class="notice">
+    <strong>Placeholder notice:</strong> replace [Business Name], [Contact Email], and [Business Address]
+    below with your actual registered business details before publishing this page. This document was
+    drafted based on OmniChef's actual features but has not been reviewed by a lawyer — have it checked
+    against India's Digital Personal Data Protection Act (DPDP), 2023, and any other applicable law before
+    relying on it for App Store / Play Store submission.
+  </div>
+
+  <p>
+    This Privacy Policy explains how <strong>[Business Name]</strong> ("we", "us", "OmniChef") collects,
+    uses, and protects information when you use the OmniChef app and website (together, the "Service").
+  </p>
+
+  <h2>1. Who this applies to</h2>
+  <p>
+    OmniChef is a business tool for cloud kitchens and small food businesses in India. It is not directed
+    at children, and we do not knowingly collect data from anyone under 18. If you invite staff members to
+    your business account, this policy applies to their use of the Service as well.
+  </p>
+
+  <h2>2. What we collect</h2>
+  <table>
+    <tr><th>Category</th><th>Examples</th><th>Why</th></tr>
+    <tr>
+      <td>Account information</td>
+      <td>Email address, password (hashed, never stored in plain text)</td>
+      <td>To create and secure your account (via Supabase Authentication)</td>
+    </tr>
+    <tr>
+      <td>Business profile</td>
+      <td>Business name, GSTIN (optional), currency, default GST rate</td>
+      <td>To generate correct invoices, recipe costs, and GST/CA reports</td>
+    </tr>
+    <tr>
+      <td>Operational data you enter</td>
+      <td>Inventory items, recipes, supplier details, sales records, wastage logs</td>
+      <td>The core function of the app — running your kitchen's records</td>
+    </tr>
+    <tr>
+      <td>Bill/invoice photos</td>
+      <td>Photos or PDFs of supplier bills you upload for scanning</td>
+      <td>Sent to our AI provider (Anthropic) to extract items, quantities, and prices;
+          stored so you can view the original receipt later</td>
+    </tr>
+    <tr>
+      <td>Recipe links</td>
+      <td>Instagram/YouTube URLs you paste into "The Magic Hook"</td>
+      <td>Sent to our AI provider to extract ingredients and quantities</td>
+    </tr>
+    <tr>
+      <td>Payment information</td>
+      <td>Subscription status, billing cycle dates</td>
+      <td>To manage your ₹999/month Pro subscription. We never see or store your card
+          number — payments are processed entirely by Razorpay</td>
+    </tr>
+    <tr>
+      <td>Device/push data</td>
+      <td>A device token or browser push subscription, if you enable notifications</td>
+      <td>To send you low-stock and expiry alerts</td>
+    </tr>
+    <tr>
+      <td>Usage data</td>
+      <td>Number of AI scans/extractions used, request timestamps</td>
+      <td>To enforce trial limits and prevent abuse</td>
+    </tr>
+  </table>
+
+  <h2>3. Who we share it with</h2>
+  <p>We use a small number of third-party services to run OmniChef. We don't sell your data to anyone.</p>
+  <ul>
+    <li><strong>Supabase</strong> — hosts our database, authentication, and file storage (including your uploaded bill photos).</li>
+    <li><strong>Anthropic (Claude)</strong> — processes bill photos and recipe links you submit, to extract structured data. Anthropic does not use this data to train its models under our usage terms.</li>
+    <li><strong>Razorpay</strong> — processes your subscription payment. Your card/UPI details go directly to Razorpay; we never receive or store them.</li>
+    <li><strong>Firebase Cloud Messaging (Google)</strong> — delivers push notifications to the mobile app.</li>
+  </ul>
+  <p>
+    These providers may process data on servers outside India as part of their global infrastructure. We
+    only share the minimum data needed for each provider to do its job.
+  </p>
+
+  <h2>4. How we protect your data</h2>
+  <ul>
+    <li>All data is scoped per business using database-level access rules (Row Level Security) — one
+      business can never read another business's data, and staff members only see the business they've
+      been invited to.</li>
+    <li>All traffic to and from the app is encrypted (HTTPS).</li>
+    <li>Passwords are never stored in plain text.</li>
+    <li>We never store your payment card details ourselves.</li>
+  </ul>
+
+  <h2>5. Your rights</h2>
+  <p>You can:</p>
+  <ul>
+    <li>Access or export your business data (CA reports, recipe costs) at any time from within the app.</li>
+    <li>Correct inaccurate business/profile information yourself, in Settings.</li>
+    <li>Request deletion of your account and associated data by contacting us at <strong>[Contact Email]</strong>.
+      We'll delete your data within a reasonable time, except where we're required to retain records
+      (e.g., financial records) by Indian law.</li>
+    <li>Revoke a staff member's access at any time from the Staff screen.</li>
+  </ul>
+
+  <h2>6. Data retention</h2>
+  <p>
+    We retain your account and business data for as long as your account is active. If you delete your
+    account, we remove your data within a reasonable period, except where retention is required for legal,
+    tax, or accounting purposes.
+  </p>
+
+  <h2>7. Changes to this policy</h2>
+  <p>
+    We may update this policy as the app changes. We'll update the "Last updated" date above; significant
+    changes will be highlighted in the app.
+  </p>
+
+  <h2>8. Contact us</h2>
+  <p>
+    Questions about this policy or your data: <strong>[Contact Email]</strong><br>
+    [Business Name], [Business Address]
+  </p>
+</div>
+</body>
+</html>
