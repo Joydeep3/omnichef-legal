@@ -93,7 +93,7 @@
     <tr>
       <td>Bill/invoice photos</td>
       <td>Photos or PDFs of supplier bills you upload for scanning</td>
-      <td>Sent to our AI provider (Anthropic) to extract items, quantities, and prices;
+      <td>Sent to our AI provider (Google Gemini) to extract items, quantities, and prices;
           stored so you can view the original receipt later</td>
     </tr>
     <tr>
@@ -123,7 +123,7 @@
   <p>We use a small number of third-party services to run OmniChef. We don't sell your data to anyone.</p>
   <ul>
     <li><strong>Supabase</strong> — hosts our database, authentication, and file storage (including your uploaded bill photos).</li>
-    <li><strong>Anthropic (Claude)</strong> — processes bill photos and recipe links you submit, to extract structured data. Anthropic does not use this data to train its models under our usage terms.</li>
+    <li><strong>Google (Gemini)</strong> — processes bill photos and recipe links you submit, to extract structured data, under Google's API terms.</li>
     <li><strong>Razorpay</strong> — processes your subscription payment. Your card/UPI details go directly to Razorpay; we never receive or store them.</li>
     <li><strong>Firebase Cloud Messaging (Google)</strong> — delivers push notifications to the mobile app.</li>
   </ul>
